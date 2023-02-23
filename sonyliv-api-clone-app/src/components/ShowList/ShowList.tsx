@@ -2,6 +2,7 @@ import { FC, useEffect, useState } from "react"
 
 import axios from "axios";
 import GithubUsersCard from "../GithubUsersCard/GithubUsersCard";
+import './ShowList.css';
 
 const ShowList: FC = () => {
 
