@@ -1,7 +1,9 @@
-const Header = () => {
+import { FC } from "react"
+
+const Header: FC = () => {
   return (
     <div>
-        <h2>Latest Episodes</h2>
+        <h2>Github Users List</h2>
     </div>
   )
 }

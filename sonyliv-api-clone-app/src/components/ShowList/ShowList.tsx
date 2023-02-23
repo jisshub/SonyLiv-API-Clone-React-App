@@ -23,7 +23,6 @@ const ShowList: FC = () => {
 
     return(
         <>
-            <h3>Users List</h3>
             <div className="users-list">
                 {
                     githubUsers.map((user: any)=>{
