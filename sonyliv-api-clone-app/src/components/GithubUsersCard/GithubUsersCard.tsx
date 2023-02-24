@@ -9,7 +9,7 @@ import { CardActionArea } from '@mui/material';
 
 const GithubUsersCard: FC = ({id, login, avatar_url}) => {
     return (
-    <Card sx={{ maxWidth: 300, mr: 2, mb: 4}} key={id}>
+    <Card sx={{ maxWidth: 300, mr: 2, mb: 4}}>
         <CardActionArea>
             <CardMedia
             component="img"
