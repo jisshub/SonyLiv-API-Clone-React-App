@@ -8,6 +8,7 @@ import { Button } from '@mui/material';
 import GithubUsersCard from "../GithubUsersCard/GithubUsersCard";
 
 import './ShowList.css';
+import Shimmer from "../Shimmer/Shimmer";
 
 
 const ShowList: FC = () => {
@@ -75,7 +76,7 @@ const ShowList: FC = () => {
                 }
             </div>
         </>
-    ): null
+    ): <Shimmer />
 }
 
 export default ShowList
