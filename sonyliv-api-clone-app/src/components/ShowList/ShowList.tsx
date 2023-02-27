@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react"
-
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 import TextField from '@mui/material/TextField';
@@ -9,6 +9,7 @@ import GithubUsersCard from "../GithubUsersCard/GithubUsersCard";
 
 import './ShowList.css';
 import Shimmer from "../Shimmer/Shimmer";
+import Followers from "../Followers/Followers";
 
 
 const ShowList: FC = () => {
@@ -68,9 +69,11 @@ const ShowList: FC = () => {
                 {
                     githubUsersFiltered.map((user: any)=>{
                         return(
+                        <>
                             <GithubUsersCard {...user} 
                             key={user.id}
                             />
+                        </>
                         )
                     })
                 }

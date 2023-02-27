@@ -4,8 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-
-// https://www.youtube.com/watch?v=Xoz31I1FuiY
+import { Link } from "react-router-dom";
 
 const GithubUsersCard: FC = ({id, login, avatar_url}) => {
     return (
