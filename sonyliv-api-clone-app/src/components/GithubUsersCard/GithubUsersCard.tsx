@@ -5,8 +5,10 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { Link } from "react-router-dom";
+import Followers from "../Followers/Followers";
 
-const GithubUsersCard: FC = ({id, login, avatar_url}) => {
+const GithubUsersCard: FC = ({id, login, avatar_url, followers_url}) => {
+    console.log(id, login, followers_url)
     return (
     <Card sx={{ maxWidth: 300, mr: 2, mb: 4}}>
         <CardActionArea>
@@ -24,6 +26,9 @@ const GithubUsersCard: FC = ({id, login, avatar_url}) => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum eos tempore neque quas enim asperiores et eligendi nesciunt vero obcaecati.
             </Typography>
             </CardContent>
+            <Link to={`/users/${login}/followers`}>
+                <Followers followers_url={followers_url} />
+            </Link>
         </CardActionArea>
     </Card>
     )
